@@ -1,0 +1,40 @@
+package testing;
+import java.util.*;
+
+public class testing {
+
+	private static final int res = 0;
+
+	public static void main(String[] args) {
+	    
+		@SuppressWarnings("resource")
+		Scanner sc=new Scanner(System.in); 
+		
+		System.out.println("Enter a number : ");
+		int n = sc.nextInt();
+		
+		int s = sum(n);
+	    int r = sumrec(n);
+		System.out.println("Sum is  "+s);
+		System.out.println("Sum after recursion is  "+r);
+	}
+
+	private static int sumrec(int n) {
+		// TODO Auto-generated method stub
+		
+		if(n==1) {
+		   return 1;
+		}
+		return n+sumrec(n-1) ;
+	}
+
+	private static int sum(int n) {
+		// TODO Auto-generated method stub
+		int s = 0;
+		for(int i=1; i<=n; i++) {
+			s= s+i;
+		}
+		return s;
+	}
+
+}
