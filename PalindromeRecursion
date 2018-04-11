@@ -3,8 +3,6 @@ import java.util.*;
 
 public class testing {
 
-	private static final int res = 0;
-
 	public static void main(String[] args) {
 	    
 		@SuppressWarnings("resource")
